@@ -1,5 +1,5 @@
 #include <stdio.h>
-//Ê÷µÄÒ»Ð©Á·Ï°
+//å…³äºŽæ ‘çš„ä¸€äº›ç»ƒä¹ 
 typedef struct btNode
 {
     int data;

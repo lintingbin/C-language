@@ -1,5 +1,5 @@
 #include <stdio.h>
-//奇数偶数重新排序
+//奇数和偶数重新排序
 int test(int n)
 {
     if (n % 2 == 0)

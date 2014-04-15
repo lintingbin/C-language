@@ -1,5 +1,5 @@
 #include <stdio.h>
-//字符反转的问题
+//字符串反转的问题
 void swap_char(char *a, char *b)
 {
     char tmp = *a;

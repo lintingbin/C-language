@@ -1,5 +1,5 @@
 #include <stdio.h>
-//八皇后的实现方法
+//八皇后问题，这边用了两种方法，simp的比较简单，本质上是一样的
 int isSafe(int *a, int index)
 {
     int i;
