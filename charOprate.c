@@ -1,5 +1,5 @@
 #include <stdio.h>
-//×Ö·û´®²Ù×÷
+//å­—ç¬¦åè½¬çš„é—®é¢˜
 void swap_char(char *a, char *b)
 {
     char tmp = *a;
