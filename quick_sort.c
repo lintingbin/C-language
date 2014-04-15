@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
-//¿ìËÙÅÅĞòµÄÊµÏÖ·½·¨
+//å¿«é€Ÿæ’åºçš„éšæœºåŒ–ç‰ˆæœ¬
 void quick_sort(int *a, int s, int d)
 {
     int i, j;
