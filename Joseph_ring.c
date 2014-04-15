@@ -1,5 +1,5 @@
 #include <stdio.h>
-//约瑟夫环的实现数学方法
+//约瑟夫环的数学实现方法
 int Joseph_ring_recurse(int n, int m)
 {
     if (n == 1 && m > 0)
