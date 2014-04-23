@@ -1,5 +1,5 @@
 #include <stdio.h>
-//а╢╠М╣др╩п╘а╥о╟
+//Е█∙И⌠╬Х║╗Г └Д╦─Д╨⌡Г╩┐Д╧═
 typedef struct listNode
 {
     int data;

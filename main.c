@@ -1,9 +1,16 @@
 #include <stdio.h>
-
-
+typedef struct btNode
+{
+    int data;
+    struct btNode *lchild, *rchild;
+}btNode, *BiTree;
 
 int main()
 {
-    arrange(6);
+    BiTree tree;
+
+    tree = CreateBiTree();
+    printf("%d ",TreeMaxRoad(tree));
+
     return 0;
 }

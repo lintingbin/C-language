@@ -44,3 +44,27 @@ void TreeOfMirror(BiTree T){
         current->rchild = tmp;
     }
 }
+
+int TreeDeep(BiTree T){
+    int leftDeep, rightDeep;
+
+    if (T == NULL)
+        return 0;
+    leftDeep = TreeDeep(T->lchild) + 1;
+    rightDeep = TreeDeep(T->rchild) + 1;
+    return leftDeep>rightDeep? leftDeep:rightDeep;
+}
+
+int TreeMaxRoad(BiTree T) {
+    int leftDeep, rightDeep;
+    static int Max = 0;
+
+    if (T == NULL)
+        return 0;
+    leftDeep = TreeDeep(T->lchild) + 1;
+    rightDeep = TreeDeep(T->rchild) + 1;
+    if (leftDeep + rightDeep - 1 > Max)
+        Max = leftDeep + rightDeep - 1;
+
+    return Max;
+}
