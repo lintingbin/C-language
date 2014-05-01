@@ -4,14 +4,16 @@ typedef struct btNode
 {
     int data;
     struct btNode *lchild, *rchild;
-}btNode, *BiTree;
+} btNode, *BiTree;
 
-BiTree CreateBiTree(){
+BiTree CreateBiTree()
+{
     char ch;
     BiTree T;
     scanf(" %c",&ch);
     if(ch=='#')T=NULL;
-    else{
+    else
+    {
         T = (BiTree)malloc(sizeof(btNode));
         T->data = ch;
         T->lchild = CreateBiTree();
@@ -19,14 +21,17 @@ BiTree CreateBiTree(){
     }
     return T;
 }
-void PreOrderTraverse(BiTree T){
-    if(T){
-       printf("%c",T->data);
-       PreOrderTraverse(T->lchild);
-       PreOrderTraverse(T->rchild);
+void PreOrderTraverse(BiTree T)
+{
+    if(T)
+    {
+        printf("%c",T->data);
+        PreOrderTraverse(T->lchild);
+        PreOrderTraverse(T->rchild);
     }
 }
-void TreeOfMirror(BiTree T){
+void TreeOfMirror(BiTree T)
+{
     BiTree stack[100], current, tmp;
     int top = -1;
 
@@ -45,7 +50,8 @@ void TreeOfMirror(BiTree T){
     }
 }
 
-int TreeDeep(BiTree T){
+int TreeDeep(BiTree T)
+{
     int leftDeep, rightDeep;
 
     if (T == NULL)
@@ -55,7 +61,8 @@ int TreeDeep(BiTree T){
     return leftDeep>rightDeep? leftDeep:rightDeep;
 }
 
-int TreeMaxRoad(BiTree T) {
+int TreeMaxRoad(BiTree T)
+{
     int leftDeep, rightDeep;
     static int Max = 0;
 
@@ -68,3 +75,44 @@ int TreeMaxRoad(BiTree T) {
 
     return Max;
 }
+
+int PrintNodeAtLevel(BiTree T, int level)
+{
+    if (!T || level < 0)
+        return 0;
+    if (level == 0)
+    {
+        printf("%c\n", T->data);
+        return 1;
+    }
+    return (PrintNodeAtLevel(T->lchild, level-1) + PrintNodeAtLevel(T->rchild, level-1));
+}
+#define N 100
+int PrintAllLevel(BiTree root)
+{
+    BiTree sequence[N];
+    int start, end, last;
+
+    if (root == NULL)
+        return 0;
+
+    start = -1;
+    end = last = 0;
+    sequence[end++] = root;
+    while (++start <= end - 1)
+    {
+        if (sequence[start]->lchild != NULL)
+            sequence[end++] = sequence[start]->lchild;
+        if (sequence[start]->rchild != NULL)
+            sequence[end++] = sequence[start]->rchild;
+        printf("%c ", sequence[start]->data);
+        if (start == last)
+        {
+            printf("\n");
+            last = end - 1;
+        }
+    }
+}
+
+
+
