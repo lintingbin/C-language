@@ -2,22 +2,22 @@
 
 int main()
 {
-	//freopen("test.txt", "r", stdin);
-	int count;
-	long long max, num;
+    //freopen("test.txt", "r", stdin);
+    int count;
+    long long max, num;
 
-	while (scanf("%d", &count) != EOF)
-	{
-		max = num = 1;
-		while (count--)
-		{
-			max *=10;
-		}
-		while (--max)
-			printf("%lld\n", num++);
+    while (scanf("%d", &count) != EOF)
+    {
+        max = num = 1;
+        while (count--)
+        {
+            max *=10;
+        }
+        while (--max)
+            printf("%lld\n", num++);
 
-	}
-	return 0;
+    }
+    return 0;
 }
 /**************************************************************
 Problem: 1515
