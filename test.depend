@@ -1,0 +1,90 @@
+# depslib dependency file v1.0
+1397544271 source:d:\learn_java\c_code\test\main.c
+	<stdio.h>
+
+1397543635 source:d:\learn_java\c_code\test\print1ton.c
+	<stdio.h>
+
+1397376978 d:\learn_java\c_code\test\header.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
+1397543812 source:d:\learn_java\c_code\test\quick_sort.c
+	<stdio.h>
+
+1397543635 source:d:\learn_java\c_code\test\charoprate.c
+	<stdio.h>
+
+1397283793 source:d:\learn_java\c_code\test\print1ton.h
+	"header.h"
+
+1397280893 source:d:\learn_java\c_code\test\quick_sort.h
+	"header.h"
+
+1397280968 source:d:\learn_java\c_code\test\charoprate.h
+
+1397283793 d:\learn_java\c_code\test\print1ton.h
+	"header.h"
+
+1397284249 d:\learn_java\c_code\test\test.h
+
+1397543635 source:d:\learn_java\c_code\test\reorderoddeven.c
+	<stdio.h>
+
+1397543687 source:d:\learn_java\c_code\test\list.c
+	<stdio.h>
+
+1397544230 source:d:\learn_java\c_code\test\tree.c
+	<stdio.h>
+
+1397543635 source:d:\learn_java\c_code\test\eightqueen.c
+	<stdio.h>
+
+1397543634 source:d:\learn_java\c_code\test\joseph_ring.c
+	<stdio.h>
+
+1397544267 source:d:\learn_java\c_code\test\arrange.c
+	<stdio.h>
+
+1397546546 source:d:\github\c-language\eightqueen.c
+	<stdio.h>
+
+1398142555 source:d:\github\c-language\list.c
+	<stdio.h>
+
+1399796239 source:d:\github\c-language\main.c
+	<stdio.h>
+	<string.h>
+
+1397543635 source:d:\github\c-language\print1ton.c
+	<stdio.h>
+
+1397546428 source:d:\github\c-language\reorderoddeven.c
+	<stdio.h>
+
+1397545753 source:d:\github\c-language\joseph_ring.c
+	<stdio.h>
+
+1397546453 source:d:\github\c-language\charoprate.c
+	<stdio.h>
+
+1398429620 source:d:\github\c-language\tree.c
+	<stdio.h>
+
+1397546013 source:d:\github\c-language\quick_sort.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1397546387 source:d:\github\c-language\arrange.c
+	<stdio.h>
+
+1398499291 source:d:\github\c-language\char.c
+	<stdio.h>
+
+1398742343 source:d:\github\c-language\array.c
+	<stdio.h>
+	<limits.h>
+

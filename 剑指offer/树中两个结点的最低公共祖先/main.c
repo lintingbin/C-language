@@ -47,7 +47,7 @@ int stack1[N], top1, stack2[N], top2;
 
 int main()
 {
-    freopen("test.txt", "r", stdin);
+    //freopen("test.txt", "r", stdin);
 
     int cnt, i, j, num1, num2;
     tree root;
@@ -77,3 +77,12 @@ int main()
     }
     return 0;
 }
+
+/**************************************************************
+    Problem: 1509
+    User: lintingbin2009
+    Language: C
+    Result: Accepted
+    Time:140 ms
+    Memory:4820 kb
+****************************************************************/
