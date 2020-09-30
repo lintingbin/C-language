@@ -1,5 +1,6 @@
 #include <stdio.h>
-//单链表的一些练习
+//单链表的一些练
+#An amazing project#
 typedef struct listNode
 {
     int data;
